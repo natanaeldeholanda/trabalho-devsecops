@@ -10,5 +10,6 @@ public class BuggyExample {
     public static void main(String[] args) {
         int result = divide(10, 0);
         System.out.println("Result: " + result); //This will crash due to division by zero
+
     }
 }

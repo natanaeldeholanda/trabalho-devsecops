@@ -2,9 +2,10 @@ public class BuggyExample {
 
     public static int divide(int a, int b) {
         if (b == 0) {
-            return -1; //Should throw an exception, not return -1
+            return a / b;
+             //Should throw an exception, not return -1
         }
-        return a / b;
+        return -1;
     }
 
     public static void main(String[] args) {

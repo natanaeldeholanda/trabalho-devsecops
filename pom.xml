@@ -1,44 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.exemplo</groupId>
-    <artifactId>buggy-example</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>Buggy Example</name>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source> <!-- Ou a versão do seu Java -->
-        <maven.compiler.target>17</maven.compiler.target>
-
-        <!-- SonarCloud configuration -->
-        <sonar.projectKey>natanaeldeholanda_buggy-example</sonar.projectKey>
-        <sonar.organization>natanaeldeholanda</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
-
-    <build>
-        <plugins>
-            <!-- Compilador Java -->
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
-            </plugin>
-
-            <!-- Sonar Scanner Plugin -->
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.11.0.3922</version>
-            </plugin>
-        </plugins>
-    </build>
-
-</project>
+<properties>
+    <sonar.organization>natanaeldeholanda</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
